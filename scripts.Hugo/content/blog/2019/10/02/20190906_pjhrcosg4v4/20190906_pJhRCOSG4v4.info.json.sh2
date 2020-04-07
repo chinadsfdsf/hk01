@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20190906_pJhRCOSG4v4.info.json.vo.* \
+    20190906_pJhRCOSG4v4.info.json.ao.* \
+    20190906_pJhRCOSG4v4.info.json.bo.* \
+    20190906_pJhRCOSG4v4.info.json.wav 
+
+rm -fr               20190906_pJhRCOSG4v4.info_dir
+mkdir -p             20190906_pJhRCOSG4v4.info_dir
+mv 20190906_pJhRCOSG4v4.info.json 20190906_pJhRCOSG4v4.info.json.*         20190906_pJhRCOSG4v4.info_dir/
+
+
+
+mv  20190906_pJhRCOSG4v4.info_dir/20190906_pJhRCOSG4v4.info.json.jpg 20190906_pJhRCOSG4v4.info_dir/20190906_pJhRCOSG4v4.info.json.mp4.jpg
+
+cat > 20190906_pJhRCOSG4v4.info_dir/_index.md << EOF3
++++
+title = " 20190906_pJhRCOSG4v4 [一小時不停播] 《願榮光歸香港》純字幕版 Glory to Hong Kong 光復香港 時代革命 612 721 811 831 香港國歌REAL HONG KONG ANTHEM "
+description = " 原作：https://www.youtube.com/watch?v=y7yRDOLCy4Y_光復香港 ，時代革命_LIBERATE HONG KONG, REVOLUTION OF OUR TIMES_願有一天煲底下除罩高唱_香港人，加油！__《願榮光歸香港》_曲: thomas dgx yhl_詞: t, 眾連登仔_編: t, bp, clk_Vocal Editing: 621, cheater, eeeee, 青棍幫, 烏素晴_Mixing: Edwin@mita, Kazaf Lew_Mastering: Edwin@mita "
+weight = 20
++++
+
+{{< mymp4 mp4="20190906_pJhRCOSG4v4.info.json.mp4" 
+text="len $(cat 20190906_pJhRCOSG4v4.info_dir/20190906_pJhRCOSG4v4.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190906_pJhRCOSG4v4.info.json.25k.mp4"
+text="len $(cat 20190906_pJhRCOSG4v4.info_dir/20190906_pJhRCOSG4v4.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="原作：https://www.youtube.com/watch?v=y7yRDOLCy4Y_光復香港 ，時代革命_LIBERATE HONG KONG, REVOLUTION OF OUR TIMES_願有一天煲底下除罩高唱_香港人，加油！__《願榮光歸香港》_曲: thomas dgx yhl_詞: t, 眾連登仔_編: t, bp, clk_Vocal Editing: 621, cheater, eeeee, 青棍幫, 烏素晴_Mixing: Edwin@mita, Kazaf Lew_Mastering: Edwin@mita" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=pJhRCOSG4v4" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

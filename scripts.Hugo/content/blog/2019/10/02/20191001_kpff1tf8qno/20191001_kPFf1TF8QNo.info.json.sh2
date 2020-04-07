@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20191001_kPFf1TF8QNo.info.json.vo.* \
+    20191001_kPFf1TF8QNo.info.json.ao.* \
+    20191001_kPFf1TF8QNo.info.json.bo.* \
+    20191001_kPFf1TF8QNo.info.json.wav 
+
+rm -fr               20191001_kPFf1TF8QNo.info_dir
+mkdir -p             20191001_kPFf1TF8QNo.info_dir
+mv 20191001_kPFf1TF8QNo.info.json 20191001_kPFf1TF8QNo.info.json.*         20191001_kPFf1TF8QNo.info_dir/
+
+
+
+mv  20191001_kPFf1TF8QNo.info_dir/20191001_kPFf1TF8QNo.info.json.jpg 20191001_kPFf1TF8QNo.info_dir/20191001_kPFf1TF8QNo.info.json.webm.mp4.jpg
+
+cat > 20191001_kPFf1TF8QNo.info_dir/_index.md << EOF3
++++
+title = " 20191001_kPFf1TF8QNo 《不屈進行曲》 《March of the Indomitable》正式版 "
+description = " 《不屈進行曲》_作曲: thomas dgx yhl_作詞: thomas dgx yhl, lk, 青棍幫, 眾連登仔_編曲: thomas dgx yhl , oldcaveman, octad, kotu, bp_Mixing: Stewin, Oldcaveman, 阿歷毛烈岑_Mastering: Oldcaveman, Stewin__歌詞:   (請唱告眾)__A1_來同行     看見嗎_大地上     不屈的心_告眾義士   即使險惡_也奮力 來驅走 昏暗__A2_在黎明前   你聽見嗎_是濁霧下   鏗鏘吼聲_告眾弟妹   不屈的你_會照亮明天的 香港__C1_為大義  來一起奮抗戰_讓熱淚  和鮮血 沒白掉_銘記  眾同伴獻身 約誓___C2_願萬代  仍堅守這要塞_讓願望  能歸依這家邦_在 絕地 屹立 共建光輝_將正義    歸萬眾__大義：正道；大道理。代表正義的道理_家邦: 是指家與國_歸依: 歸於, 依附___DGX Orchestra_Conductor: YJDW__Flute: nottavino, elaine choy_Clarinet: Pepper pig, Lai Lai_Alto saxophone: BLKO, sillydude_Tenor Saxophone: Ivgle144, CC_Horn: joseph, uayagkh, poohpooh, christy_Trumpet: UIKROHCS, Bismarck_Trombone: 阿俊, 餵棚_Euphonium: baubau_Tuba: Luby_Percussion: Justin, 又狂讀書又狂做嘢, 扑嘢梗係要收錢, 黑椒_Organ: Dr Rubbish Teen___DGX Chorus_Chorusmaster: Dulcisona__Soprano_A phantom voice_Ada_Charlotte_Cilantro_Claudia_Cs_Grace Leung_heyhey_Kayjai_Ms Penguin_msmk_Muimui_Mun_Natalie K._Penguinreiter_Samantha Chin_short object_YTIE_最後的歌 還可珍惜什麼？_左_柒貮壹_蝦餃_迪爾德麗__Alto_britishbee_Deedee Chan_fangirling4ever_HKer 2_Hongkongian_Katrina Yeung_Llama_lwt_Marie Chan_MC_Momo_PCT_Ru_Squid C_The Milk Square_WL_Yan仔_地地_討厭人類__Tenor_Dulcisona_Frederick Leaf_FT_Geoffrey Tang_handsomejohnnyyiu.com_hei6_Jumpjumptiger_Philip Lee_Sun Y_急柒_落樓食早餐_駱駝哥___Bass_AL_billi_Caleb 我個仔同女個阿爸_Christopher ng_CSH_D7777_Daniel Lau_Danny_fwd_Hi Five_HKer 1_Kito_Leucovorin_Little Bird_PVC_Simeon Ho_tall object_Wai_YWCY_極耶_江海記餘生_祖祖你_路比_雷囡_____Attribution-NonCommercial-NoDerivatives 4.0 International____NO DERIVATIVE without my permission_all rights reserved_chorus inspired by_vivaldi - gloria rv589_____背景為dgx studio 旗 logo__榮光logo:_含意: 18區人民(18粒星星) 相隔自由既海洋  守護著自由光明既兩岸_星星代表人民  榮光歸於人民    榮光歸於香港__聯絡  contact us:_https://forms.gle/aEdW1nQM9LBAsFcXA "
+weight = 20
++++
+
+{{< mymp4 mp4="20191001_kPFf1TF8QNo.info.json.webm.mp4" 
+text="len $(cat 20191001_kPFf1TF8QNo.info_dir/20191001_kPFf1TF8QNo.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20191001_kPFf1TF8QNo.info.json.25k.mp4"
+text="len $(cat 20191001_kPFf1TF8QNo.info_dir/20191001_kPFf1TF8QNo.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="《不屈進行曲》_作曲: thomas dgx yhl_作詞: thomas dgx yhl, lk, 青棍幫, 眾連登仔_編曲: thomas dgx yhl , oldcaveman, octad, kotu, bp_Mixing: Stewin, Oldcaveman, 阿歷毛烈岑_Mastering: Oldcaveman, Stewin__歌詞:   (請唱告眾)__A1_來同行     看見嗎_大地上     不屈的心_告眾義士   即使險惡_也奮力 來驅走 昏暗__A2_在黎明前   你聽見嗎_是濁霧下   鏗鏘吼聲_告眾弟妹   不屈的你_會照亮明天的 香港__C1_為大義  來一起奮抗戰_讓熱淚  和鮮血 沒白掉_銘記  眾同伴獻身 約誓___C2_願萬代  仍堅守這要塞_讓願望  能歸依這家邦_在 絕地 屹立 共建光輝_將正義    歸萬眾__大義：正道；大道理。代表正義的道理_家邦: 是指家與國_歸依: 歸於, 依附___DGX Orchestra_Conductor: YJDW__Flute: nottavino, elaine choy_Clarinet: Pepper pig, Lai Lai_Alto saxophone: BLKO, sillydude_Tenor Saxophone: Ivgle144, CC_Horn: joseph, uayagkh, poohpooh, christy_Trumpet: UIKROHCS, Bismarck_Trombone: 阿俊, 餵棚_Euphonium: baubau_Tuba: Luby_Percussion: Justin, 又狂讀書又狂做嘢, 扑嘢梗係要收錢, 黑椒_Organ: Dr Rubbish Teen___DGX Chorus_Chorusmaster: Dulcisona__Soprano_A phantom voice_Ada_Charlotte_Cilantro_Claudia_Cs_Grace Leung_heyhey_Kayjai_Ms Penguin_msmk_Muimui_Mun_Natalie K._Penguinreiter_Samantha Chin_short object_YTIE_最後的歌 還可珍惜什麼？_左_柒貮壹_蝦餃_迪爾德麗__Alto_britishbee_Deedee Chan_fangirling4ever_HKer 2_Hongkongian_Katrina Yeung_Llama_lwt_Marie Chan_MC_Momo_PCT_Ru_Squid C_The Milk Square_WL_Yan仔_地地_討厭人類__Tenor_Dulcisona_Frederick Leaf_FT_Geoffrey Tang_handsomejohnnyyiu.com_hei6_Jumpjumptiger_Philip Lee_Sun Y_急柒_落樓食早餐_駱駝哥___Bass_AL_billi_Caleb 我個仔同女個阿爸_Christopher ng_CSH_D7777_Daniel Lau_Danny_fwd_Hi Five_HKer 1_Kito_Leucovorin_Little Bird_PVC_Simeon Ho_tall object_Wai_YWCY_極耶_江海記餘生_祖祖你_路比_雷囡_____Attribution-NonCommercial-NoDerivatives 4.0 International____NO DERIVATIVE without my permission_all rights reserved_chorus inspired by_vivaldi - gloria rv589_____背景為dgx studio 旗 logo__榮光logo:_含意: 18區人民(18粒星星) 相隔自由既海洋  守護著自由光明既兩岸_星星代表人民  榮光歸於人民    榮光歸於香港__聯絡  contact us:_https://forms.gle/aEdW1nQM9LBAsFcXA" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=kPFf1TF8QNo" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
